@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>META IT SCHOOL — Zamonaviy Professional IT Ta'lim Markazi</title>
+  <meta name="description" content="META IT SCHOOL — Andijon shahridagi zamonaviy IT akademiyasi. Frontend, Backend, Robototexnika, Kiberxavfsizlik, Ingliz tili va kompyuter savodxonligi kurslari.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><path d='M30 65 L45 35 L55 52 L65 35 L80 65' stroke='%2338bdf8' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/><circle cx='50' cy='32' r='5' fill='%23ffffff'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-banner">
+    <div class="container top-banner-container">
+      <div class="banner-text">
+        <span class="badge-pulse"><i class="fa-solid fa-bolt"></i> Yangi qabul</span>
+        <span data-i18n="topBannerText">Yangi guruhlarga qabul ochiq! Ro'yxatdan o'ting va IT sohasida ilk qadamingizni qo'ying.</span>
+      </div>
+      <div class="banner-contact">
+        <span><i class="fa-solid fa-location-dot"></i> Andijon sh., Yangi bozor, Lenskiy ko'chasi</span>
+        <span><i class="fa-solid fa-phone"></i> +998 (74) 220-00-00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo" aria-label="META IT SCHOOL Home">
+        <div class="logo-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">META <span 
+            class="text-gradient">IT SCHOOL</span></span>
+          <span class="logo-sub"></span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active" data-i18n="navHome">Bosh sahifa</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="navAbout">Biz haqimizda</a></li>
+          <li><a href="#courses" class="nav-link" data-i18n="navCourses">Kurslar</a></li>
+          <li><a href="#teachers" class="nav-link" data-i18n="navTeachers">O‘qituvchilar</a></li>
+          <li><a href="#schedule" class="nav-link" data-i18n="navSchedule">Dars jadvali</a></li>
+          <li><a href="#competitions" class="nav-link" data-i18n="navCompetitions">Musobaqalar</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="navProjects">Loyihalar</a></li>
+          <li><a href="#news" class="nav-link" data-i18n="navNews">Yangiliklar</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="navContact">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Controls -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-dropdown">
+          <button class="btn-lang" id="langBtn" aria-expanded="false" aria-label="Tilni tanlash">
+            <i class="fa-solid fa-globe"></i>
+            <span id="currentLang">UZ</span>
+            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+          </button>
+          <div class="lang-menu" id="langMenu">
+            <button class="lang-option active" data-lang="uz">
+              <span class="flag-icon">🇺🇿</span> O‘zbekcha (UZ)
+            </button>
+            <button class="lang-option" data-lang="ru">
+              <span class="flag-icon">🇷🇺</span> Русский (RU)
+            </button>
+            <button class="lang-option" data-lang="en">
+              <span class="flag-icon">🇬🇧</span> English (EN)
+            </button>
+          </div>
+        </div>
+
+        <!-- Theme Toggle (Dark / Light) -->
+        <button class="btn-theme-toggle" id="themeToggleBtn" aria-label="Rejimni o'zgartirish" title="Tungi / Kunduzgi rejim">
+          <i class="fa-solid fa-moon icon-dark"></i>
+          <i class="fa-solid fa-sun icon-light"></i>
+        </button>
+
+        <!-- CTA Register Button -->
+        <a href="#register" class="btn btn-primary nav-cta-btn">
+          <span data-i18n="navRegisterBtn">Ro‘yxatdan o‘tish</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger" id="hamburgerBtn" aria-label="Mobil menyu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop -->
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span data-i18n="heroBadge">Zamonaviy IT Ta'lim Markazi</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-company">META IT SCHOOL</span>
+            <span class="title-highlight text-gradient" data-i18n="heroMotto">Kelajagingni bugun dasturlashni boshlash orqali yarat!</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="heroDescription">
+            Zamonaviy kasblarni o‘rganing, o‘z bilimlaringizni rivojlantiring va IT olamida o‘z o‘rningizni toping.
+            Haftada 3 kun asosiy nazariy dars va 3 kun to'liq amaliyot hamda takrorlash tizimi bilan sifatli ta'lim oling.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary btn-glow">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span data-i18n="heroBtnCourses">Kurslarni ko‘rish</span>
+            </a>
+            <a href="#register" class="btn btn-secondary">
+              <i class="fa-solid fa-user-plus"></i>
+              <span data-i18n="heroBtnRegister">Ro‘yxatdan o‘tish</span>
+            </a>
+            <a href="#about" class="btn btn-outline">
+              <i class="fa-solid fa-circle-info"></i>
+              <span data-i18n="heroBtnAbout">Biz haqimizda</span>
+            </a>
+          </div>
+
+          <!-- Hero Trust Metrics -->
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number">8+</span>
+              <span class="metric-label" data-i18n="metricCourses">IT Yo'nalishlar</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">6 <small>kun</small></span>
+              <span class="metric-label" data-i18n="metricSchedule">Haftalik Tizim</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">3+3</span>
+              <span class="metric-label" data-i18n="metricMethod">Dars & Amaliyot</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label" data-i18n="metricProjects">Amaliy Loyihalar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Interactive Mockup -->
+        <div class="hero-visual">
+          <div class="code-editor-card">
+            <div class="editor-header">
+              <div class="editor-buttons">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="editor-tab">
+                <i class="fa-brands fa-js text-warning"></i>
+                <span>MetaItSchool.js</span>
+              </div>
+              <div class="editor-status">
+                <span class="status-live">● ONLINE</span>
+              </div>
+            </div>
+
+            <div class="editor-body">
+              <pre><code><span class="code-comment">// META IT SCHOOL</span>
+<span class="code-keyword">const</span> <span class="code-def">academy</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"META IT SCHOOL"</span>,
+  <span class="code-prop">location</span>: <span class="code-string">"Andijon, Yangi bozor"</span>,
+  <span class="code-prop">system</span>: <span class="code-string">"3 kun dars + 3 kun amaliyot"</span>,
+  <span class="code-prop">status</span>: <span class="code-string">"Yangi qabul ochiq 🚀"</span>,
+  <span class="code-prop">courses</span>: [
+    <span class="code-string">"Frontend"</span>, <span class="code-string">"Backend"</span>, <span class="code-string">"Robototexnika"</span>,
+    <span class="code-string">"Kiberxavfsizlik"</span>, <span class="code-string">"Ingliz tili"</span>, <span class="code-string">"Office"</span>
+  ],
+  <span class="code-def">startCareer</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Muvaffaqiyatli IT mutaxassis!"</span>;
+  }
+};
+
+<span class="code-func">console</span>.<span class="code-call">log</span>(<span class="code-string">"Kelajagingizni biz bilan quring!"</span>);</code></pre>
+            </div>
+
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-award"></i>
+              <div>
+                <strong>Sifatli Ta'lim</strong>
+                <small>Mentorlar doimiy nazoratida</small>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-microchip"></i>
+              <div>
+                <strong>Zamonaviy Texnika</strong>
+                <small>Eng so'nggi laboratoriyalar</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Us Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="aboutTag"><i class="fa-solid fa-compass"></i> Maktabimiz Haqida</div>
+          <h2 class="section-title" data-i18n="aboutTitle">META IT SCHOOL nima va biz qanday ishlaymiz?</h2>
+          <p class="section-subtitle" data-i18n="aboutSubtitle">
+            Biz shunchaki nazariya o‘rgatmaymiz, balki o‘quvchilarni real bozor talablariga mos, kreativ fikrlaydigan va jamoada ishlay oladigan IT mutaxassislar qilib tayyorlaymiz.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Mission Card -->
+          <div class="about-card main-card">
+            <div class="card-icon-wrapper">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 data-i18n="aboutMissionTitle">Maktabning Asosiy Maqsadi</h3>
+            <p data-i18n="aboutMissionDesc">
+              META IT SCHOOLning oliy maqsadi — har bir o‘quvchiga zamonaviy axborot texnologiyalari sohasida mustahkam poydevor yaratish, yoshlarning mantiqiy fikrlashini oshirish va ularni raqobatbardosh, mustaqil loyihalar yarata oladigan dasturchilar hamda mutaxassislar qilib yetishtirishdir.
+            </p>
+            <ul class="about-check-list">
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="aboutGoal1">Yosh chegarasisiz o'rganish imkoniyati (boshlang'ichdan professionalgacha)</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="aboutGoal2">Xalqaro metodikaga asoslangan o'quv dasturlari</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="aboutGoal3">Har bir o'quvchiga individual mentorlik yondashuvi</span></li>
+            </ul>
+          </div>
+
+          <!-- Opportunities Card -->
+          <div class="about-card">
+            <div class="card-icon-wrapper">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3 data-i18n="aboutOppTitle">O‘quvchilarga Beriladigan Imkoniyatlar</h3>
+            <p data-i18n="aboutOppDesc">
+              Har bir talabamiz kuchli texnik baza, zamonaviy kompyuterlar, robototexnika qismlari va cheksiz tezkor internetdan foydalanish huquqiga ega.
+            </p>
+            <div class="feature-tags">
+              <span>Zamonaviy kompyuterlar</span>
+              <span>Coworking hududi</span>
+              <span>Robototexnika laboratoriyasi</span>
+              <span>Doimiy Wi-Fi</span>
+            </div>
+          </div>
+
+          <!-- Methodology Card -->
+          <div class="about-card">
+            <div class="card-icon-wrapper">
+              <i class="fa-solid fa-cubes-stacked"></i>
+            </div>
+            <h3 data-i18n="aboutMethodTitle">Zamonaviy Ta'lim Metodikasi (3+3)</h3>
+            <p data-i18n="aboutMethodDesc">
+              Haftada 3 kun yangi mavzular chuqur tushuntiriladi. Qolgan 3 kun esa darsni takrorlash, mustahkamlash, xatolar ustida ishlash va haftalik testlarga bag‘ishlanadi.
+            </p>
+            <div class="method-badge">
+              <i class="fa-solid fa-arrows-spin"></i>
+              <span>Nazariya + Mustahkamlash = Yuqori Natija</span>
+            </div>
+          </div>
+
+          <!-- Practice & Teamwork Card -->
+          <div class="about-card">
+            <div class="card-icon-wrapper">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <h3 data-i18n="aboutPracticeTitle">Amaliy Mashg‘ulotlar va Jamoaviy Loyihalar</h3>
+            <p data-i18n="aboutPracticeDesc">
+              O‘quvchilar yakka tartibda emas, balki real IT kompaniyalardagidek jamoa bo‘lib ishlashni, Git bilan kod boshqarishni va bir-birlarining kodlarini ko‘rib chiqishni o‘rganishadi.
+            </p>
+          </div>
+
+          <!-- Student Growth Card -->
+          <div class="about-card">
+            <div class="card-icon-wrapper">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3 data-i18n="aboutGrowthTitle">O‘quvchilarning Bosqichma-bosqich Rivojlanishi</h3>
+            <p data-i18n="aboutGrowthDesc">
+              Har oy yakunida o‘quvchilar imtihon topshirib, o‘z loyihalarini taqdimot qilishadi. Ota-onalar farzandlarining o‘sish ko‘rsatkichlarini muntazam kuzatib borishlari mumkin.
+            </p>
+          </div>
+        </div>
+
+        <!-- Editable Demo Statistics Row -->
+        <div class="demo-stats-container">
+          <div class="demo-stat-note">
+            <i class="fa-solid fa-circle-info"></i>
+            <span data-i18n="demoStatsDisclaimer">Quyidagi statistik ko‘rsatkichlar tahrirlanadigan namunaviy qiymatlardir:</span>
+          </div>
+          <div class="stats-cards-grid">
+            <div class="stat-box">
+              <span class="stat-value">500+</span>
+              <span class="stat-label" data-i18n="statStudents">Namunaviy o'quvchilar</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">15+</span>
+              <span class="stat-label" data-i18n="statMentors">Namunaviy mentorlar</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">8</span>
+              <span class="stat-label" data-i18n="statCoursesCount">Professional kurslar</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-value">98%</span>
+              <span class="stat-label" data-i18n="statSatisfaction">Mamnunlik darajasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. All Courses Section -->
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="coursesTag"><i class="fa-solid fa-book-open"></i> O'quv Dasturlari</div>
+          <h2 class="section-title" data-i18n="coursesTitle">Barcha Professional IT Kurslarimiz</h2>
+          <p class="section-subtitle" data-i18n="coursesSubtitle">
+            Qiziqishingizga mos yo‘nalishni tanlang. Har bir kurs amaliy tajribaga asoslangan bo‘lib, oylik to‘lovlar qulay va shaffof belgilangan.
+          </p>
+        </div>
+
+        <!-- Course Search & Filter Bar -->
+        <div class="courses-toolbar">
+          <!-- Search Input -->
+          <div class="course-search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="courseSearchInput" placeholder="Kurs nomi yoki texnologiya bo'yicha qidiring..." aria-label="Kurslarni qidirish">
+            <button class="search-clear-btn" id="searchClearBtn" title="Tozalash"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+
+          <!-- Filter Categories -->
+          <div class="course-filter-buttons" id="courseFilterGroup">
+            <button class="filter-btn active" data-filter="all" data-i18n="filterAll">Barchasi</button>
+            <button class="filter-btn" data-filter="dev" data-i18n="filterDev">Dasturlash</button>
+            <button class="filter-btn" data-filter="tech" data-i18n="filterTech">Texnologiya & Kiber</button>
+            <button class="filter-btn" data-filter="office" data-i18n="filterOffice">Ofis & Savodxonlik</button>
+            <button class="filter-btn" data-filter="lang" data-i18n="filterLang">Tillari</button>
+          </div>
+        </div>
+
+        <!-- Courses Dynamic Grid -->
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Dynamic Course Cards will be rendered by JavaScript -->
+        </div>
+
+        <!-- No Results Found State -->
+        <div class="no-results hidden" id="noCoursesFound">
+          <i class="fa-solid fa-face-frown"></i>
+          <h4 data-i18n="noCourseTitle">Hech qanday kurs topilmadi</h4>
+          <p data-i18n="noCourseDesc">Boshqa so‘z bilan qidirib ko‘ring yoki barcha kurslar filtrini tanlang.</p>
+          <button class="btn btn-outline" id="resetSearchFilterBtn" data-i18n="resetFilterBtn">Filtrni tozalash</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Course Pricing Overview Section -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="pricingTag"><i class="fa-solid fa-receipt"></i> Shaffof Narxlar</div>
+          <h2 class="section-title" data-i18n="pricingTitle">Kurslar Narxlari Jadvali</h2>
+          <p class="section-subtitle" data-i18n="pricingSubtitle">
+            META IT SCHOOLda yashirin to‘lovlar yo‘q. Barcha narxlar o‘zbek so‘mida ko‘rsatilgan bo‘lib, oylik to‘lov shaklida qabul qilinadi.
+          </p>
+        </div>
+
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th data-i18n="thNumber">#</th>
+                <th data-i18n="thCourse">Kurs Nomi</th>
+                <th data-i18n="thDuration">Davomiyligi</th>
+                <th data-i18n="thSchedule">Haftalik Tartib</th>
+                <th data-i18n="thPrice">Oylik Narxi</th>
+                <th data-i18n="thAction">Harakat</th>
+              </tr>
+            </thead>
+            <tbody id="pricingTableBody">
+              <!-- Rendered via JavaScript for dynamic pricing consistency -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pricing-guarantee-card">
+          <div class="guarantee-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="guarantee-text">
+            <h4 data-i18n="guaranteeTitle">Birinchi Dars — Bepul Sinov Darsi!</h4>
+            <p data-i18n="guaranteeDesc">O‘quvchilarimiz o‘zlariga mos kursni tanlashlarida adashmasliklari uchun birinchi sinov darsimizda bepul qatnashishlari mumkin.</p>
+          </div>
+          <a href="#register" class="btn btn-primary" data-i18n="guaranteeBtn">Sinov darsiga yozilish</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Weekly Schedule Section -->
+    <section class="section schedule-section" id="schedule">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="scheduleTag"><i class="fa-solid fa-calendar-days"></i> Dars Tartibi</div>
+          <h2 class="section-title" data-i18n="scheduleTitle">Haftalik Dars Jadvali</h2>
+          <p class="section-subtitle" data-i18n="scheduleSubtitle">
+            META IT SCHOOL haftada 6 kun ishlaydi. 3 kun asosiy darslar va 3 kun amaliy takrorlash, yakshanba esa rasmiy dam olish kuni hisoblanadi.
+          </p>
+        </div>
+
+        <!-- Shift Selector (Kunduzgi / Kechki) -->
+        <div class="shift-switch-wrapper">
+          <div class="shift-toggle-group">
+            <button class="shift-btn active" data-shift="day" id="shiftDayBtn">
+              <i class="fa-solid fa-sun"></i> <span data-i18n="shiftDay">Kunduzgi smena (09:00 - 12:00 / 14:00 - 17:00)</span>
+            </button>
+            <button class="shift-btn" data-shift="evening" id="shiftEveningBtn">
+              <i class="fa-solid fa-moon"></i> <span data-i18n="shiftEvening">Kechki smena (18:00 - 21:00)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Timetable Cards -->
+        <div class="schedule-grid">
+          <!-- Dushanba -->
+          <div class="day-card main-lesson">
+            <div class="day-header">
+              <span class="day-badge main" data-i18n="typeMainLesson">Asosiy Dars</span>
+              <h3 data-i18n="dayMon">Dushanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="monDesc">Yangi mavzu taqdimoti, asosiy nazariya, mentor bilan interaktiv tushuntirish va kod yozish.</p>
+              <div class="day-tags">
+                <span>Nazariya</span>
+                <span>Yangi mavzu</span>
+                <span>Mentor tushuntirishi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seshanba -->
+          <div class="day-card practice-lesson">
+            <div class="day-header">
+              <span class="day-badge practice" data-i18n="typePractice">Amaliyot & Takrorlash</span>
+              <h3 data-i18n="dayTue">Seshanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="tueDesc">Dushanba darsini mustahkamlash, individual topshiriqlarni bajarish, kod xatolarini tahlil qilish.</p>
+              <div class="day-tags">
+                <span>Mustahkamlash</span>
+                <span>Amaliyot</span>
+                <span>Qo'shimcha yordam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chorshanba -->
+          <div class="day-card main-lesson">
+            <div class="day-header">
+              <span class="day-badge main" data-i18n="typeMainLesson">Asosiy Dars</span>
+              <h3 data-i18n="dayWed">Chorshanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="wedDesc">Ikkinchi asosiy modul darsi, algoritmlar, yangi texnik usullar va loyiha arxitekturasi.</p>
+              <div class="day-tags">
+                <span>Nazariya</span>
+                <span>Algoritmlar</span>
+                <span>Loyiha darsi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payshanba -->
+          <div class="day-card practice-lesson">
+            <div class="day-header">
+              <span class="day-badge practice" data-i18n="typePractice">Mustahkamlash</span>
+              <h3 data-i18n="dayThu">Payshanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="thuDesc">Chorshanba mavzusi bo‘yicha chuqur amaliy mashg‘ulot, o‘qituvchi bilan savol-javob sessiyasi.</p>
+              <div class="day-tags">
+                <span>Amaliy topshiriq</span>
+                <span>Savol-javob</span>
+                <span>Code Review</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Juma -->
+          <div class="day-card main-lesson">
+            <div class="day-header">
+              <span class="day-badge main" data-i18n="typeMainLesson">Asosiy Dars</span>
+              <h3 data-i18n="dayFri">Juma</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="friDesc">Haftaning uchinchi asosiy nazariy darsi, haftalik mavzularni umumlashtirish va katta vazifa berish.</p>
+              <div class="day-tags">
+                <span>Haftalik xulosa</span>
+                <span>Yangi texnologiya</span>
+                <span>Loyiha topshirig'i</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shanba -->
+          <div class="day-card practice-lesson highlight-saturday">
+            <div class="day-header">
+              <span class="day-badge test" data-i18n="typeTest">Takrorlash, Test & Quiz</span>
+              <h3 data-i18n="daySat">Shanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-regular fa-clock"></i> <span class="time-slot-text">09:00 - 12:00 / 14:00 - 17:00</span></div>
+              <p class="day-desc" data-i18n="satDesc">Haftalik o‘rganilgan barcha mavzular yuzasidan amaliy sinov, test sinovlari va mini hackathon.</p>
+              <div class="day-tags">
+                <span>Haftalik Test</span>
+                <span>Mini Musobaqa</span>
+                <span>Natijalar tahlili</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yakshanba -->
+          <div class="day-card rest-day">
+            <div class="day-header">
+              <span class="day-badge rest" data-i18n="typeRest">DAM OLISH</span>
+              <h3 data-i18n="daySun">Yakshanba</h3>
+            </div>
+            <div class="day-body">
+              <div class="day-time"><i class="fa-solid fa-mug-hot"></i> <span data-i18n="restTimeText">Dam olish kuni</span></div>
+              <p class="day-desc" data-i18n="sunDesc">O‘quvchilar va o‘qituvchilar uchun hordiq chiqarish, yangi hafta uchun kuch yig‘ish kuni.</p>
+              <div class="rest-icon-large">
+                <i class="fa-solid fa-bed"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Competitions & Tournaments Section -->
+    <section class="section competitions-section" id="competitions">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="compTag"><i class="fa-solid fa-trophy"></i> Turnirlar & Bellashuvlar</div>
+          <h2 class="section-title" data-i18n="compTitle">Musobaqalar va Turnirlar</h2>
+          <p class="section-subtitle" data-i18n="compSubtitle">
+            O‘quvchilarimiz o‘z bilimlarini sinab ko‘rishlari, sovg‘alarni qo‘lga kiritishlari va jamoada ishlash tajribasini oshirishlari uchun muntazam musobaqalar o‘tkazib kelinadi.
+          </p>
+        </div>
+
+        <div class="demo-info-banner">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span data-i18n="demoCompNotice">Diqqat: Quyida keltirilgan barcha tadbirlar maktab dasturidagi namunaviy musobaqalardir.</span>
+        </div>
+
+        <!-- Competitions Grid -->
+        <div class="competitions-grid" id="competitionsGrid">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Teachers / Mentors Section -->
+    <section class="section teachers-section" id="teachers">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="teachersTag"><i class="fa-solid fa-user-tie"></i> Bizning Jamoa</div>
+          <h2 class="section-title" data-i18n="teachersTitle">Tajribali O‘qituvchilar va Mentorlar</h2>
+          <p class="section-subtitle" data-i18n="teachersSubtitle">
+            Bizning mentorlarimiz nafaqat nazariy bilim beradi, balki o‘zlarining amaliy IT loyihalaridagi tajribalarini o‘quvchilarga o‘rgatadilar.
+          </p>
+        </div>
+
+        <div class="demo-info-banner">
+          <i class="fa-solid fa-circle-info"></i>
+          <span data-i18n="demoTeacherNotice">Eslatma: Quyidagi o‘qituvchi kartalari tahrirlanadigan namunaviy profillardir. Haqiqiy jamoa ma'lumotlari bilan osongina yangilanishi mumkin.</span>
+        </div>
+
+        <div class="teachers-grid" id="teachersGrid">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Student Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="projectsTag"><i class="fa-solid fa-laptop-file"></i> Portfolio</div>
+          <h2 class="section-title" data-i18n="projectsTitle">O‘quvchilarimiz Yaratgan Loyihalar</h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">
+            Nazariya amaliyotsiz hech narsa emas. O‘quvchilarimiz darslar davomida mustaqil ravishda yaratgan ba'zi qiziqarli loyihalar bilan tanishing.
+          </p>
+        </div>
+
+        <!-- Project Categories Filter -->
+        <div class="project-filter-buttons" id="projectFilterGroup">
+          <button class="project-filter-btn active" data-filter="all" data-i18n="filterAll">Barchasi</button>
+          <button class="project-filter-btn" data-filter="web" data-i18n="pFilterWeb">Website loyihalari</button>
+          <button class="project-filter-btn" data-filter="robot" data-i18n="pFilterRobot">Robototexnika</button>
+          <button class="project-filter-btn" data-filter="backend" data-i18n="pFilterCode">Dasturlash</button>
+          <button class="project-filter-btn" data-filter="excel" data-i18n="pFilterExcel">Excel & Ma'lumotlar</button>
+          <button class="project-filter-btn" data-filter="team" data-i18n="pFilterTeam">Jamoaviy loyihalar</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. News & Announcements Section -->
+    <section class="section news-section" id="news">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="newsTag"><i class="fa-solid fa-newspaper"></i> E'lonlar</div>
+          <h2 class="section-title" data-i18n="newsTitle">Yangiliklar va E'lonlar</h2>
+          <p class="section-subtitle" data-i18n="newsSubtitle">
+            META IT SCHOOL hayotidagi so‘nggi yangiliklar, musobaqa natijalari va yangi guruhlarga qabullar to‘g‘risida xabardor bo‘ling.
+          </p>
+        </div>
+
+        <div class="news-grid" id="newsGrid">
+          <!-- Rendered via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Registration Form Section -->
+    <section class="section register-section" id="register">
+      <div class="container">
+        <div class="register-wrapper">
+          <div class="register-info-col">
+            <div class="section-tag"><i class="fa-solid fa-user-check"></i> Qabul 2024-2025</div>
+            <h2 class="register-title" data-i18n="regTitle">META IT SCHOOLga Hoziroq Ro‘yxatdan O‘ting!</h2>
+            <p class="register-desc" data-i18n="regDesc">
+              O‘z ma'lumotlaringizni to‘ldiring, qiziqayotgan kursingizni va o‘zingizga qulay o‘qish rejimini tanlang. Biz siz bilan bog‘lanib, sinov darsi vaqti haqida xabar beramiz.
+            </p>
+
+            <div class="register-perks">
+              <div class="perk-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h4 data-i18n="perk1Title">Bepul konsultatsiya va sinov darsi</h4>
+                  <p data-i18n="perk1Desc">Birinchi darsda mutlaqo bepul qatnashing va o‘z yo‘nalishingizni aniqlang.</p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h4 data-i18n="perk2Title">Zamonaviy kompyuterlar bilan ta'minlangan xonalar</h4>
+                  <p data-i18n="perk2Desc">Dars paytida shaxsiy noutbukingiz bo‘lishi shart emas, barcha texnika mavjud.</p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <h4 data-i18n="perk3Title">Sertifikat va amaliy portfolio</h4>
+                  <p data-i18n="perk3Desc">Kursni tamomlaganingizda rasmiy sertifikat va mustaqil loyihalar portfoliosiga ega bo‘lasiz.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Demo Persistence Notice Box -->
+            <div class="demo-storage-card">
+              <div class="storage-card-header">
+                <i class="fa-solid fa-database"></i>
+                <span data-i18n="demoStorageTitle">Demo Rejim (Frontend LocalStorage)</span>
+              </div>
+              <p data-i18n="demoStorageDesc">
+                Saytda backend server ulanmaganligi sababli barcha yuborilgan arizalar brauzeringizning <code>localStorage</code> xotirasida namunaviy tarzda xavfsiz saqlanadi.
+              </p>
+              <button class="btn-text-sm" id="viewSubmissionsBtn">
+                <i class="fa-solid fa-list-check"></i> <span data-i18n="viewSubmissionsBtn">Saqlangan arizalarni ko'rish (<span id="submissionsCount">0</span>)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Registration Form Column -->
+          <div class="register-form-col">
+            <div class="form-card">
+              <div class="form-card-header">
+                <h3 data-i18n="formHeaderTitle">Arizani to'ldirish</h3>
+                <p data-i18n="formHeaderDesc">Barcha maydonlarni diqqat bilan to'ldiring</p>
+              </div>
+
+              <!-- Alert Messages Container -->
+              <div class="form-alert hidden" id="formAlert"></div>
+
+              <form id="registrationForm" novalidate>
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="fullName">
+                    <i class="fa-solid fa-user"></i> <span data-i18n="lblFullName">Ism va familiya</span> <span class="required">*</span>
+                  </label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Masalan: Sardor Aliyev" required autocomplete="name">
+                  <span class="field-error" id="errorFullName"></span>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                  <label for="phoneNumber">
+                    <i class="fa-solid fa-phone"></i> <span data-i18n="lblPhone">Telefon raqam</span> <span class="required">*</span>
+                  </label>
+                  <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+998 90 123 45 67" required autocomplete="tel">
+                  <span class="field-error" id="errorPhoneNumber"></span>
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                  <label for="userAge">
+                    <i class="fa-solid fa-calendar-check"></i> <span data-i18n="lblAge">Yoshingiz</span> <span class="required">*</span>
+                  </label>
+                  <input type="number" id="userAge" name="userAge" placeholder="Masalan: 16" min="7" max="65" required>
+                  <span class="field-error" id="errorUserAge"></span>
+                </div>
+
+                <!-- Course Selection -->
+                <div class="form-group">
+                  <label for="courseSelect">
+                    <i class="fa-solid fa-graduation-cap"></i> <span data-i18n="lblCourse">Qiziqayotgan kursingiz</span> <span class="required">*</span>
+                  </label>
+                  <select id="courseSelect" name="courseSelect" required>
+                    <option value="" disabled selected data-i18n="optSelectCourse">-- Kursni tanlang --</option>
+                    <!-- Options populated by JS -->
+                  </select>
+                  <span class="field-error" id="errorCourseSelect"></span>
+                </div>
+
+                <!-- Dynamic Price Display Badge -->
+                <div class="selected-price-box" id="selectedPriceBox">
+                  <div class="price-box-label">
+                    <i class="fa-solid fa-tag"></i> <span data-i18n="lblSelectedPrice">Oylik to‘lov:</span>
+                  </div>
+                  <div class="price-box-val" id="coursePriceDisplay">
+                    <span class="price-amount">—</span>
+                  </div>
+                </div>
+
+                <!-- Shift Mode (Radio Cards) -->
+                <div class="form-group">
+                  <label><i class="fa-solid fa-clock"></i> <span data-i18n="lblShift">O‘qish rejimi (smena)</span> <span class="required">*</span></label>
+                  <div class="shift-radio-group">
+                    <label class="radio-card">
+                      <input type="radio" name="studyShift" value="Kunduzgi" checked>
+                      <div class="radio-content">
+                        <i class="fa-solid fa-sun"></i>
+                        <div>
+                          <strong data-i18n="shiftDayTitle">Kunduzgi rejim</strong>
+                          <small>09:00 - 12:00 yoki 14:00 - 17:00</small>
+                        </div>
+                      </div>
+                    </label>
+
+                    <label class="radio-card">
+                      <input type="radio" name="studyShift" value="Kechki">
+                      <div class="radio-content">
+                        <i class="fa-solid fa-moon"></i>
+                        <div>
+                          <strong data-i18n="shiftNightTitle">Kechki rejim</strong>
+                          <small>18:00 - 21:00</small>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Comment / Notes -->
+                <div class="form-group">
+                  <label for="userComment">
+                    <i class="fa-solid fa-comment-dots"></i> <span data-i18n="lblComment">Qo‘shimcha izoh yoki savollar (ixtiyoriy)</span>
+                  </label>
+                  <textarea id="userComment" name="userComment" rows="3" placeholder="Masalan: Dasturlash bo'yicha boshlang'ich bilimim bor..."></textarea>
+                </div>
+
+                <!-- Buttons: Submit & Reset -->
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-submit" id="submitFormBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span data-i18n="btnSubmitForm">Arizani yuborish</span>
+                  </button>
+                  <button type="reset" class="btn btn-secondary btn-reset" id="resetFormBtn">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <span data-i18n="btnResetForm">Tozalash</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQ Accordion Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="faqTag"><i class="fa-solid fa-circle-question"></i> Savol-Javoblar</div>
+          <h2 class="section-title" data-i18n="faqTitle">Ko‘p So‘raladigan Savollar</h2>
+          <p class="section-subtitle" data-i18n="faqSubtitle">
+            O‘quvchilar va ota-onalar tomonidan tez-tez beriladigan savollarga javoblar bilan tanishib chiqing.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrapper" id="faqAccordion">
+          <!-- Accordion Items dynamically or statically structured -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">1. META IT SCHOOL qayerda joylashgan?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>O‘quv markazimiz <strong>Andijon shahri, Yangi bozor hududi, Lenskiy ko‘chasida</strong> joylashgan. Qatnov uchun barcha jamoat transportlari qulay va bekatlarga yaqin.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">2. Qaysi kurslar mavjud?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Bizda jami 8 ta asosiy zamonaviy yo‘nalish mavjud: Frontend dasturlash, Backend dasturlash, Ingliz tili, Robototexnika, Kiberxavfsizlik, Informatika (kompyuter savodxonligi), Microsoft Word va Microsoft Excel kurslari.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">3. Kurs narxlari qancha?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Ingliz tili kursi oylik <strong>350 000 so‘m</strong>, qolgan barcha kasbiy va texnik kurslarimiz (Frontend, Backend, Robototexnika, Kiberxavfsizlik, Informatika, Word, Excel) esa har biri <strong>480 000 so‘m / oy</strong> qilib belgilangan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">4. Haftada necha kun dars bo‘ladi?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>META IT SCHOOL haftada <strong>6 kun</strong> ishlaydi. 3 kun asosiy yangi mavzu o‘tiladigan darslar, 3 kun esa darsni takrorlash, amaliy topshiriqlar bajarish, savol-javob va haftalik testlarga ajratilgan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">5. Yakshanba kuni dars bormi?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yo‘q, yakshanba kuni barcha o‘quvchilar va o‘qituvchilar uchun rasmiy dam olish kuni hisoblanadi. Darslar haftaning dushanbadan shanbagacha bo‘lgan kunlarida olib boriladi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">6. Yangi boshlovchilar ham o‘qishi mumkinmi?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Albatta! Kurslarimiz noldan, hech qanday IT bilimi bo‘lmagan boshlovchilarga moslashtirilgan. Kompyuterdan foydalanishni bilmaydiganlar uchun Informatika va ofis dasturlari kurslarimizdan boshlash tavsiya etiladi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">7. Qanday ro‘yxatdan o‘tiladi?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Saytimizdagi "Ro‘yxatdan o‘tish" formasini to‘ldirish yoki aloqa raqamlarimiz orqali administratorimizga murojaat qilish kifoya. Shundan so‘ng sizni bepul sinov darsiga taklif qilamiz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-text">8. Kurslar qancha davom etadi?</span>
+              <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Kurs davomiyligi tanlangan yo‘nalishga bog‘liq: Dasturlash (Frontend, Backend) va Robototexnika 6 oydan 8 oygacha, Kiberxavfsizlik 5 oy, Ingliz tili 6 oy, Informatika va Microsoft Office dasturlari esa 2 oydan 3 oygacha davom etadi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Contact & Location Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="contactTag"><i class="fa-solid fa-headset"></i> Biz bilan Bog'laning</div>
+          <h2 class="section-title" data-i18n="contactTitle">Manzil va Aloqa Ma'lumotlari</h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">
+            Bizga tashrif buyuring yoki ijtimoiy tarmoqlar orqali bog‘laning. Har qanday savollaringizga mamnuniyat bilan javob beramiz.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-cards-col">
+            <!-- Address Card -->
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ci-details">
+                <h4 data-i18n="cAddressTitle">Bizning Manzil</h4>
+                <p><strong>Andijon shahri, Yangi bozor, Lenskiy ko‘chasi, O‘zbekiston.</strong></p>
+                <small data-i18n="cAddressNote">Mo'ljal: Yangi bozor savdo majmuasi yaqinida</small>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div class="ci-details">
+                <h4 data-i18n="cPhoneTitle">Telefon Raqamlar</h4>
+                <p><a href="tel:+998742200000">+998 (74) 220-00-00</a></p>
+                <p><a href="tel:+998900000000">+998 (90) 000-00-00</a> <span class="badge-sub">(Placeholder)</span></p>
+                <small data-i18n="cPhoneNote">Har kuni soat 08:30 dan 20:30 gacha qo‘ng‘iroqlarni qabul qilamiz</small>
+              </div>
+            </div>
+
+            <!-- Working Hours Card -->
+            <div class="contact-info-card">
+              <div class="ci-icon"><i class="fa-regular fa-clock"></i></div>
+              <div class="ci-details">
+                <h4 data-i18n="cHoursTitle">Ish Vaqti</h4>
+                <p><strong>Dushanba — Shanba:</strong> 08:30 – 20:30</p>
+                <p><strong class="text-danger">Yakshanba:</strong> Dam olish kuni</p>
+                <small data-i18n="cHoursNote">Haftada 6 ish kuni faoliyat ko'rsatiladi</small>
+              </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="contact-info-card social-card">
+              <div class="ci-icon"><i class="fa-solid fa-share-nodes"></i></div>
+              <div class="ci-details">
+                <h4 data-i18n="cSocialTitle">Ijtimoiy Tarmoqlarimiz</h4>
+                <p data-i18n="cSocialDesc">Eng so'nggi xabarlar va e'lonlar uchun sahifalarimizga obuna bo'ling:</p>
+                <div class="social-btn-group">
+                  <a href="https://t.me/meta_it_school_placeholder" target="_blank" rel="noopener noreferrer" class="social-link-btn telegram" title="Telegram kanalimiz">
+                    <i class="fa-brands fa-telegram"></i> Telegram Kanal
+                  </a>
+                  <a href="https://instagram.com/meta_it_school_placeholder" target="_blank" rel="noopener noreferrer" class="social-link-btn instagram" title="Instagram profilimiz">
+                    <i class="fa-brands fa-instagram"></i> Instagram Profil
+                  </a>
+                </div>
+                <div class="placeholder-note">
+                  <small><i class="fa-solid fa-circle-info"></i> Rasmiy havolalar taqdim etilganda ulanishi mumkin bo'lgan placeholder havolalar.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Column -->
+          <div class="contact-map-col">
+            <div class="map-card-wrapper">
+              <div class="map-header">
+                <div class="map-title">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                  <span>Andijon shahri, Lenskiy ko'chasi (Yangi bozor)</span>
+                </div>
+                <span class="map-badge">Google Maps</span>
+              </div>
+              <div class="map-iframe-container">
+                <!-- Styled interactive Google Map embed centered on Andijon Yangi Bozor -->
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12111.455088015383!2d72.33878239062366!3d40.78187886470077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bcecd8d63f25b3%3A0xa196395b0fead52b!2sAndijan%2C%20Andijan%20Region%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="META IT SCHOOL Joylashuvi Xaritasi">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Brand Summary -->
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo footer-logo">
+            <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="logo-text">
+              <span class="logo-title">META <span class="text-gradient">IT SCHOOL</span></span>
+              <span class="logo-sub">FUTURE TECH ACADEMY</span>
+            </div>
+          </a>
+          <p class="footer-about-text" data-i18n="footerAbout">
+            META IT SCHOOL — Andijon shahridagi zamonaviy IT ta'lim markazi. Bizning maqsadimiz — sifatli amaliy ta'lim orqali yoshlarga dunyo darajasidagi kasblarni o‘rgatish.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://t.me/meta_it_school_placeholder" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://instagram.com/meta_it_school_placeholder" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="tel:+998742200000" aria-label="Telefon"><i class="fa-solid fa-phone"></i></a>
+            <a href="#contact" aria-label="Manzil"><i class="fa-solid fa-location-dot"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="fQuickLinks">Tezkor Havolalar</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-i18n="navHome">Bosh sahifa</a></li>
+            <li><a href="#about" data-i18n="navAbout">Biz haqimizda</a></li>
+            <li><a href="#courses" data-i18n="navCourses">Kurslar</a></li>
+            <li><a href="#teachers" data-i18n="navTeachers">O‘qituvchilar</a></li>
+            <li><a href="#schedule" data-i18n="navSchedule">Dars jadvali</a></li>
+            <li><a href="#competitions" data-i18n="navCompetitions">Musobaqalar</a></li>
+            <li><a href="#news" data-i18n="navNews">Yangiliklar</a></li>
+          </ul>
+        </div>
+
+        <!-- Courses Links -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="fCourses">Bizning Kurslar</h4>
+          <ul class="footer-links">
+            <li><a href="#courses" onclick="filterAndScroll('Frontend')">Frontend dasturlash</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Backend')">Backend dasturlash</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Robototexnika')">Robototexnika</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Kiberxavfsizlik')">Kiberxavfsizlik</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Ingliz tili')">Ingliz tili</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Informatika')">Informatika</a></li>
+            <li><a href="#courses" onclick="filterAndScroll('Excel')">Microsoft Word & Excel</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-title" data-i18n="fContact">Aloqa va Ish Tartibi</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Andijon sh., Yangi bozor, Lenskiy ko‘chasi, O‘zbekiston</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+998 (74) 220-00-00</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Dush - Shan: 08:30 - 20:30<br><strong class="text-danger">Yakshanba: Dam olish</strong></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="currentYear">2025</span> <strong>META IT SCHOOL</strong>. Barcha huquqlar himoyalangan.
+        </p>
+        <p class="footer-note">
+          Zamonaviy IT kasblarni o'rganing va kelajagingizni quring!
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Course Details Popup -->
+  <div class="modal-overlay" id="courseModalOverlay" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Yopish">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body" id="modalBody">
+          <!-- Dynamic Content Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Demo Submissions Viewer -->
+  <div class="modal-overlay" id="submissionsModalOverlay" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="subModalCloseBtn" aria-label="Yopish">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-header-custom">
+          <h3><i class="fa-solid fa-database"></i> Brauzerda saqlangan arizalar (Demo)</h3>
+          <p>Ushbu ro'yxat <code>localStorage</code> orqali saqlangan demo qabul yozuvlarini ko'rsatadi.</p>
+        </div>
+        <div class="modal-body">
+          <div id="submissionsListContainer">
+            <!-- Dynamic Submissions List -->
+          </div>
+          <div class="modal-footer-actions">
+            <button class="btn btn-outline" id="clearAllSubmissionsBtn">
+              <i class="fa-solid fa-trash-can"></i> Barcha demo arizalarni tozalash
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notifications -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Yuqoriga qaytish" title="Yuqoriga">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
